@@ -1,0 +1,46 @@
+body{
+    display: flex;
+}
+
+.display-content{
+    flex: 2;
+}
+
+.type-content{
+    flex:1;
+}
+
+h1{
+    color: indigo;
+}
+
+.commends{
+
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: blueviolet;
+    margin: 10px;
+    margin-right: 50px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+
+}
+
+form{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: bisque;
+    margin: 10px;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+a{
+    border: 1px solid black;
+    position: relative;
+    top: 15px;
+    color: black;
+    padding: 5px;
+    background-color: beige;
+}

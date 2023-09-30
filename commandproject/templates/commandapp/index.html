@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/commandapp/style.css">
+    <title>Details</title>
+</head>
+<body>
+    
+
+    <div class="display-content">
+        <h1>Commends:</h1>
+        
+        {% for i in data %}
+
+        <div class="commends">
+        
+            <h3>{{i.title}}</h3>
+
+            <p>{{i.commands}}</p>
+
+            <small>{{i.date}}</small>
+
+            </br>
+
+            <a href="/commandapp/delete/{{i.id}}">Delete</a>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+    <div class="type-content">
+
+     <form method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+
+        <input type="submit" value="Add Commend">
+
+     </form>
+    </div>
+
+    
+</body>
+</html>
